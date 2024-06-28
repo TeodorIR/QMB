@@ -4,7 +4,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .welcome {
+  .hero {
     background-image: url("../assets/cover.png");
     background-size: cover;
     width: 100%;
@@ -14,9 +14,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    position: relative;
   }
 
-  .welcome::after {
+  .hero::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -25,7 +27,7 @@ body {
     clip-path: polygon(100% 0, 0% 100%, 0 0);
   }
 
-  .welcome::before {
+  .hero::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -34,36 +36,53 @@ body {
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   }
 
-  .welcome .name {
-    background-color: rgba(255, 255, 255, 0.4);
-    width: 50%;
-    position: absolute;
-    z-index: 3;
-  }
-
-  .welcome .name p {
-    font-size: 1.2rem;
-    padding-left: 3px;
-    color: rgb(80, 80, 80);
-    position: relative;
-  }
-
-  .btn {
+  .hero .navbar {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 30px;
+    justify-content: space-between;
     position: absolute;
-    bottom: 10px;
-    box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.4);
-    border: none;
-    z-index: 3;
-    cursor: pointer;
+    align-items: center;
+    top: 10px;
+    z-index: 1;
   }
 
-  .btn img {
-    width: 15px;
-    padding: 0 0 0 5px;
+  .hero .navbar .name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .hero .navbar .name p {
+    margin: 0 0 10px 0;
+  }
+
+  .hero .navbar .name p.q {
+    font-size: 25px;
+  }
+
+  .hero .navbar img {
+    width: 50px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .immerse {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    border-top: 3px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .immerse h2 {
+    font-size: 1rem;
+  }
+
+  .immerse img {
+    width: 25px;
+    padding-left: 15px;
   }
 }

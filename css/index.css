@@ -133,6 +133,7 @@ body {
 
   .vessel .vessel-text p.second {
     padding: 0 10px;
+    line-height: 1.5;
   }
 
   .focus {
@@ -166,5 +167,23 @@ body {
   }
   .focus .right-card .down-card p {
     font-size: 2rem;
+  }
+
+  .focus-text {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+  }
+
+  .focus-text .text-left {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    line-height: 2;
+  }
+
+  .focus-text .text-right {
+    width: 100%;
+    background-color: rgba(185, 55, 94, 0.4);
   }
 }

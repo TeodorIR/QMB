@@ -180,6 +180,23 @@ body {
     box-sizing: border-box;
     padding: 10px 20px;
     line-height: 2;
+    position: relative;
+  }
+
+  .focus-text .text-left p {
+    padding: 0 0 10px 0;
+    margin-top: 10px;
+  }
+
+  .focus-text .text-left::before {
+    content: "";
+    width: 100%;
+    background-color: rgba(185, 55, 94, 0.4);
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
   }
 
   .focus-text .text-right {

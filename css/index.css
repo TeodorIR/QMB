@@ -313,7 +313,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgba(185, 55, 94, 0.4);
-    padding: 30px 0 0 0;
+    padding: 30px 0;
   }
 
   .picks-container .picks {
@@ -368,5 +368,20 @@ body {
   .picks-container .picks p {
     color: #fff;
     font-size: 2rem;
+  }
+
+  .logos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background-color: rgba(185, 55, 94, 1);
+  }
+
+  .logos img {
+    width: 40px;
   }
 }

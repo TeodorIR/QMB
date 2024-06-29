@@ -314,6 +314,13 @@ body {
     justify-content: center;
     background-color: rgba(185, 55, 94, 0.4);
     padding: 30px 0;
+    flex-direction: column;
+  }
+
+  .picks-container h3 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 0 25px 0;
   }
 
   .picks-container .picks {
@@ -351,23 +358,60 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    border-top: 3px solid #fff;
   }
 
   .picks-container .picks .second-card .second-text {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
 
   .picks-container .picks .third-card .third-text {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    border-bottom: 3px solid #fff;
   }
 
-  .picks-container .picks p {
+  .picks-container .picks p.head {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+  }
+
+  .picks-container .picks p.job {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+  }
+
+  .picks-container .picks p.read {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+    padding: 25px 0 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .picks-container .picks p.read img {
+    width: 20px;
+    padding: 0 0 0 10px;
   }
 
   .logos {

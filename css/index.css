@@ -203,4 +203,32 @@ body {
     width: 100%;
     background-color: rgba(185, 55, 94, 0.4);
   }
+
+  .breathe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .breathe .breathe-img img {
+    width: 100%;
+  }
+
+  .breathe .breathe-text {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .breathe .breathe-text p.b {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .breathe .breathe-text p {
+    font-size: 1.5rem;
+  }
 }

@@ -84,3 +84,14 @@ function fadein() {
     }
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburgerButton = document.querySelector(".hamburger");
+  const navbarOpen = document.querySelector(".navbar-open");
+
+  /* TOGGLE MENU AND HAMBURGER BUTTON STATE WHEN THE BUTTON IS CLICKED */
+  hamburgerButton.addEventListener("click", function () {
+    hamburgerButton.classList.toggle("active");
+    navbarOpen.classList.toggle("visible");
+  });
+});
